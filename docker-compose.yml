@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  service-registry:
+    container_name: service-registry-v0.1
+    image: service-registry-v0.1-image
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8761:8761
+    restart: always
+
+networks:
+  default:
+    external:
+      name: pigihi-network
