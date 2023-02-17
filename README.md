@@ -23,3 +23,8 @@ eureka:
 server:
   port: port in which the service registry is to be run (Eg: 8761)
 ```
+## Local Deployment
+In Linux,
+
+1. Open terminal and run `docker-compose up`
+2. The application can be accessed at localhost:8761 (port 8761 is set in docker-compose)
